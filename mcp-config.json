@@ -1,0 +1,35 @@
+{
+  "description": "Model Context Protocol (MCP) client configurations for FlowScope MCP Server",
+  "transports": {
+    "stdio": {
+      "name": "flowscope",
+      "command": "java",
+      "args": [
+        "-jar",
+        "/Users/kiran/Documents/workspace/java-workspace/flowscope-mcp/target/flowscope-mcp.jar"
+      ]
+    },
+    "sse": {
+      "name": "flowscope",
+      "url": "http://localhost:8081/mcp/sse"
+    }
+  },
+  "claude_desktop_config_example": {
+    "mcpServers": {
+      "flowscope": {
+        "command": "java",
+        "args": [
+          "-jar",
+          "/Users/kiran/Documents/workspace/java-workspace/flowscope-mcp/target/flowscope-mcp.jar"
+        ]
+      }
+    }
+  },
+  "cursor_or_antigravity_mcp_config_example": {
+    "mcpServers": {
+      "flowscope": {
+        "url": "http://localhost:8081/mcp/sse"
+      }
+    }
+  }
+}
