@@ -34,7 +34,7 @@ public class OpenApiConfig {
                                 - **SSE Stream** (`/mcp/sse`) — Persistent Server-Sent Events stream for AI agents.
                                 - **Message Endpoint** (`/mcp/message`) — JSON-RPC 2.0 message dispatch endpoint.
                                 """)
-                        .contact(new Contact().name("FlowScope"))
+                        
                         .license(new License().name("Proprietary")))
                 .servers(List.of(new Server().url("/").description("This server")));
     }
