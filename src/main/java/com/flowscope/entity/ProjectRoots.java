@@ -15,7 +15,7 @@ import org.w3c.dom.NodeList;
 /**
  * Resolves the full set of source roots to analyze for a project. Given the
  * primary directory, it auto-detects sibling modules the project depends on —
- * so base classes and shared code in another module (e.g. a {@code cm-commons}
+ * so base classes and shared code in another module (e.g. a {@code shared-commons}
  * library) are parsed too and cross-module calls/inheritance resolve.
  *
  * <p>Detection is conservative: it reads the primary module's {@code pom.xml},

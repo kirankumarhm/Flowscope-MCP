@@ -11,8 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * OpenAPI 3 metadata for the FlowScope REST API. The generated spec is served at
- * {@code /v3/api-docs} and the interactive Swagger UI at {@code /swagger-ui.html}.
+ * OpenAPI 3 metadata for the FlowScope MCP Server.
  */
 @Configuration
 public class OpenApiConfig {
@@ -34,7 +33,7 @@ public class OpenApiConfig {
                                 - **SSE Stream** (`/mcp/sse`) — Persistent Server-Sent Events stream for AI agents.
                                 - **Message Endpoint** (`/mcp/message`) — JSON-RPC 2.0 message dispatch endpoint.
                                 """)
-                        
+                        .contact(new Contact().name("FlowScope"))
                         .license(new License().name("Proprietary")))
                 .servers(List.of(new Server().url("/").description("This server")));
     }
